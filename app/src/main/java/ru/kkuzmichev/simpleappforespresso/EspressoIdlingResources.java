@@ -1,4 +1,5 @@
-package ru.kkuzmichev.simpleappforespresso.ui;
+package ru.kkuzmichev.simpleappforespresso;
+
 
 import androidx.test.espresso.idling.CountingIdlingResource;
 
@@ -11,7 +12,7 @@ public class EspressoIdlingResources {
     }
 
     public static void decrement() {
-        if (!idlingResource.isIdleNow()) {
+        if(!idlingResource.isIdleNow()) {
             idlingResource.decrement();
         }
     }

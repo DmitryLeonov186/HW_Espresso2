@@ -40,7 +40,7 @@ public class EspressoTest {
 
 
     @Test
-    public void intentsTest () {
+    public void intentsTest() {
         ViewInteraction settings = onView(withParent(isAssignableFrom(ActionMenuView.class)));
         ViewInteraction settingsItem = onView(allOf(withId(R.id.title), withText(text)));
 
